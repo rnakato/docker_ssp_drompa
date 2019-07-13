@@ -5,19 +5,26 @@
 # DROMPA3 binary will be installed in /home/DROMPA3/
 # DROMPAplus binary will be installed in /home/DROMPAplus/bin
 
-
 FROM rnakato/ubuntu:18.04
-MAINTAINER Ryuichiro Nakato <rnakato@iam.u-tokyo.ac.jp>
+LABEL maintainer "Ryuichiro Nakato <rnakato@iam.u-tokyo.ac.jp>"
 
 WORKDIR /home
 ENV DEBIAN_FRONTEND=noninteractive
 
-ENV PACKAGES git build-essential libboost-all-dev libgsl-dev libgtkmm-3.0-dev libz-dev samtools \
-    libgtk2.0-dev libgsl-dev r-base ca-certificates
-
-RUN apt update \
-    && apt install -y --no-install-recommends ${PACKAGES} \
-    && apt clean
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+    build-essential \
+    ca-certificates \
+    git \
+    libboost-all-dev \
+    libgsl-dev \
+    libgtk2.0-dev \
+    libgtkmm-3.0-dev \
+    libz-dev \
+    r-base \
+    samtools \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 RUN git clone https://github.com/rnakato/SSP.git \
     && cd SSP \
     && make
