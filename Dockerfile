@@ -1,6 +1,6 @@
 # SSP version 1.1.3
 # DROMPA version 3.7.1
-# DROMPAplus version 1.1.3
+# DROMPAplus version 1.3.0
 # SSP binary will be installed in /home/SSP/bin/
 # DROMPA3 binary will be installed in /home/DROMPA3/
 # DROMPAplus binary will be installed in /home/DROMPAplus/bin
@@ -36,6 +36,6 @@ RUN git clone --recursive https://github.com/rnakato/DROMPAplus \
     && make
 ADD script script
 
-ENV PATH ${PATH}:/home/SSP/bin:/home/DROMPA3:/home/DROMPAplus/bin:/home/DROMPAplus/cpdf/Linux-Intel-64bit:/home/script
+ENV PATH ${PATH}:/home/SSP/bin:/home/DROMPA3:/home/DROMPAplus/bin:/home/DROMPAplus/submodules/cpdf/Linux-Intel-64bit:/home/DROMPAplus/otherbins:/home/script
 
 CMD ["/bin/bash"]
