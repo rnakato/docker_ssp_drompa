@@ -1,11 +1,11 @@
 # SSP version 1.1.3
-# DROMPA version 3.7.1
-# DROMPAplus version 1.3.0
+# DROMPA version 3.7.2
+# DROMPAplus version 1.3.2
 # SSP binary will be installed in /home/SSP/bin/
 # DROMPA3 binary will be installed in /home/DROMPA3/
 # DROMPAplus binary will be installed in /home/DROMPAplus/bin
 
-FROM rnakato/ubuntu:18.04
+FROM rnakato/ubuntu:dorowu-bionic
 LABEL maintainer "Ryuichiro Nakato <rnakato@iam.u-tokyo.ac.jp>"
 
 WORKDIR /home
