@@ -33,6 +33,7 @@ RUN git clone https://github.com/rnakato/DROMPA3 \
     && make
 RUN git clone --recursive https://github.com/rnakato/DROMPAplus \
     && cd DROMPAplus \
+    && git submodule foreach git pull origin master \
     && make
 ADD script script
 
