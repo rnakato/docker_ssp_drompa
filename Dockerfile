@@ -5,7 +5,7 @@
 # DROMPA3 binary will be installed in /home/DROMPA3/
 # DROMPAplus binary will be installed in /home/DROMPAplus/bin
 
-FROM rnakato/ubuntu:dorowu-bionic
+FROM rnakato/ubuntu:18.04
 LABEL maintainer "Ryuichiro Nakato <rnakato@iam.u-tokyo.ac.jp>"
 
 WORKDIR /home
