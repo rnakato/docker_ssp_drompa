@@ -1,12 +1,12 @@
 # SSP version 1.1.5
 # DROMPA version 3.7.2
-# DROMPAplus version 1.4.0
+# DROMPAplus version 1.5.0
 # SSP binary will be installed in /home/SSP/bin/
 # DROMPA3 binary will be installed in /home/DROMPA3/
 # DROMPAplus binary will be installed in /home/DROMPAplus/bin
 # Python3.6 is in /usr/local/bin
 
-FROM rnakato/ubuntu:18.04
+FROM rnakato/ubuntu:20.04
 LABEL maintainer "Ryuichiro Nakato <rnakato@iam.u-tokyo.ac.jp>"
 
 WORKDIR /home
