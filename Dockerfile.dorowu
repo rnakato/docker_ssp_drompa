@@ -17,11 +17,16 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     build-essential \
     ca-certificates \
+    clang \
+    cmake \
     git \
     libboost-all-dev \
+    libbz2-dev \
+    libcurl4-gnutls-dev \
     libgsl-dev \
     libgtk2.0-dev \
     libgtkmm-3.0-dev \
+    liblzma-dev \
     libz-dev \
     r-base \
     python3-pip \

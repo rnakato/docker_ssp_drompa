@@ -1,6 +1,6 @@
-# SSP version 1.1.5
+# SSP version 1.2.1
 # DROMPA version 3.7.2
-# DROMPAplus version 1.5.0
+# DROMPAplus version 1.7.1
 # SSP binary will be installed in /home/SSP/bin/
 # DROMPA3 binary will be installed in /home/DROMPA3/
 # DROMPAplus binary will be installed in /home/DROMPAplus/bin
@@ -18,11 +18,15 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     build-essential \
     ca-certificates \
+    clang \
     git \
     libboost-all-dev \
+    libbz2-dev \
+    libcurl4-gnutls-dev \
     libgsl-dev \
     libgtk2.0-dev \
     libgtkmm-3.0-dev \
+    liblzma-dev \
     libz-dev \
     r-base \
     python3-pip \
