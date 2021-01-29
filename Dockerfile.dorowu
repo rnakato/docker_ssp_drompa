@@ -1,12 +1,5 @@
-# SSP version 1.1.5
-# DROMPA version 3.7.2
-# DROMPAplus version 1.4.0
-# SSP binary will be installed in /home/SSP/bin/
-# DROMPA3 binary will be installed in /home/DROMPA3/
-# DROMPAplus binary will be installed in /home/DROMPAplus/bin
-
 FROM rnakato/ubuntu:dorowu-bionic
-LABEL maintainer "Ryuichiro Nakato <rnakato@iam.u-tokyo.ac.jp>"
+LABEL maintainer "Ryuichiro Nakato <rnakato@iqb.u-tokyo.ac.jp>"
 
 WORKDIR /home
 ENV DEBIAN_FRONTEND=noninteractive
@@ -45,6 +38,6 @@ RUN git clone --recursive https://github.com/rnakato/DROMPAplus \
     && make
 RUN pip3 install pandas seaborn matplotlib
 
-RUN ln -s /usr/bin/python3.6 /usr/local/bin/python
+RUN ln -s /usr/bin/python3 /usr/local/bin/python
 
 CMD ["/bin/bash"]

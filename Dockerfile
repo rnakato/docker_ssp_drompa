@@ -1,13 +1,13 @@
 # SSP version 1.2.1
 # DROMPA version 3.7.2
-# DROMPAplus version 1.7.1
+# DROMPAplus version 1.8.1
 # SSP binary will be installed in /home/SSP/bin/
 # DROMPA3 binary will be installed in /home/DROMPA3/
 # DROMPAplus binary will be installed in /home/DROMPAplus/bin
 # Python3.6 is in /usr/local/bin
 
-FROM rnakato/ubuntu:20.04
-LABEL maintainer "Ryuichiro Nakato <rnakato@iam.u-tokyo.ac.jp>"
+FROM rnakato/ubuntu:18.04
+LABEL maintainer "Ryuichiro Nakato <rnakato@iqb.u-tokyo.ac.jp>"
 
 WORKDIR /home
 ENV DEBIAN_FRONTEND=noninteractive
@@ -19,6 +19,7 @@ RUN apt-get update \
     build-essential \
     ca-certificates \
     clang \
+    cmake \
     git \
     libboost-all-dev \
     libbz2-dev \
@@ -45,6 +46,6 @@ RUN git clone --recursive https://github.com/rnakato/DROMPAplus \
     && make
 RUN pip3 install pandas seaborn matplotlib
 
-RUN ln -s /usr/bin/python3.6 /usr/local/bin/python
+RUN ln -s /usr/bin/python3 /usr/local/bin/python
 
 CMD ["/bin/bash"]
