@@ -1,6 +1,6 @@
 for tag in latest 18.04
 do
-    docker build -t rnakato/ssp_drompa:$tag .
+    docker build -t rnakato/ssp_drompa:$tag . --no-cache
     docker push rnakato/ssp_drompa:$tag
 done
 
