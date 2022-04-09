@@ -1,11 +1,11 @@
-# SSP version 1.2.2
+# SSP version 1.2.3
 # DROMPA version 3.7.2
-# DROMPAplus version 1.12.1
+# DROMPAplus version 1.12.2
 # SSP binary will be installed in /home/SSP/bin/
 # DROMPA3 binary will be installed in /home/DROMPA3/
 # DROMPAplus binary will be installed in /home/DROMPAplus/bin
 # ChIPseqTools binary will be installed in /home/ChIPseqTools/bin
-# Python3.6 is in /usr/local/bin
+# Python3.8 is in /usr/local/bin
 
 FROM rnakato/ubuntu:20.04
 LABEL maintainer "Ryuichiro Nakato <rnakato@iqb.u-tokyo.ac.jp>"
