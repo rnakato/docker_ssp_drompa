@@ -2,9 +2,9 @@
 Repository of Docker image for SSP and DROMPA
 
 - SSP version 1.2.3
+- DROMPAplus version 1.14.0
 - DROMPA version 3.7.2
-- DROMPAplus version 1.12.2
-- ChIPsqTools
+- ChIPsqTools version 1.0.0
 
 - SSP binary will be installed in /home/SSP/bin/
 - DROMPA3 binary will be installed in /home/DROMPA3/
