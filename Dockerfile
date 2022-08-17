@@ -2,11 +2,12 @@
 # DROMPA3 binary will be installed in /home/DROMPA3/
 # DROMPAplus binary will be installed in /home/DROMPAplus/bin
 # ChIPseqTools binary will be installed in /home/ChIPseqTools/bin
-# Python3.8 is in /usr/local/bin
+# Python3 is in /usr/local/bin
 
-FROM rnakato/ubuntu:20.04
+FROM rnakato/ubuntu:2022.08
 LABEL maintainer "Ryuichiro Nakato <rnakato@iqb.u-tokyo.ac.jp>"
 
+USER root
 WORKDIR /home
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -35,6 +36,7 @@ RUN apt-get update \
     samtools \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+
 RUN git clone https://github.com/rnakato/SSP.git \
     && cd SSP \
     && make
@@ -49,7 +51,6 @@ RUN git clone --recursive https://github.com/rnakato/ChIPseqTools.git \
     && cd ChIPseqTools \
     && make
 
-#RUN pip3 install python3-setuptools \
 RUN pip3 install pandas seaborn matplotlib
 
 RUN ln -s /usr/bin/python3 /usr/local/bin/python
