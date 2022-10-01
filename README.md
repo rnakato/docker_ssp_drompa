@@ -2,7 +2,7 @@
 Repository of Docker image for SSP and DROMPA
 
 - SSP version 1.2.3
-- DROMPAplus version 1.14.0
+- DROMPAplus version 1.16.0
 - DROMPA version 3.7.2
 - ChIPsqTools version 1.0.0
 
