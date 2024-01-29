@@ -1,16 +1,16 @@
 # docker_ssp_drompa
 Repository of Docker image for SSP and DROMPA
 
-- SSP version 1.2.3
-- DROMPAplus version 1.16.0
+- DROMPAplus version 1.18.1
 - DROMPA version 3.7.2
+- SSP version 1.3.1
 - ChIPsqTools version 1.0.0
 
 - SSP binary will be installed in /home/SSP/bin/
 - DROMPA3 binary will be installed in /home/DROMPA3/
 - DROMPAplus binary will be installed in /home/DROMPAplus/bin
 - ChIPseqTools binary will be installed in /home/ChIPseqTools/bin
-- Python3.8 is in /usr/local/bin
+- Python3.9 is in /usr/local/bin
 
 ## Run
 
@@ -38,7 +38,3 @@ First clone and move to the repository
 Then type:
 
     docker build -t <account>/ssp_drompa .
-
-## Contact
-
-Ryuichiro Nakato: rnakato AT iqb.u-tokyo.ac.jp
