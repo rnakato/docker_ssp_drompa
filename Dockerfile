@@ -4,12 +4,11 @@
 # ChIPseqTools binary will be installed in /home/ChIPseqTools/bin
 # Python3 is in /usr/local/bin
 
-FROM rnakato/ubuntu:2022.08
+FROM rnakato/ubuntu_22.04:2024.02
 LABEL maintainer "Ryuichiro Nakato <rnakato@iqb.u-tokyo.ac.jp>"
 
 USER root
 WORKDIR /home
-ENV DEBIAN_FRONTEND=noninteractive
 
 ENV PATH /usr/local/bin:${PATH}:/home/SSP/bin:/home/DROMPA3:/home/DROMPAplus/bin:/home/DROMPAplus/submodules/cpdf/Linux-Intel-64bit:/home/DROMPAplus/otherbins:/home/ChIPseqTools/bin/:/home/script
 
@@ -18,8 +17,6 @@ RUN apt-get update \
     build-essential \
     ca-certificates \
     clang \
-    cmake \
-    git \
     libboost-all-dev \
     libbz2-dev \
     libcurl4-gnutls-dev \

@@ -1,8 +1,8 @@
 # docker_ssp_drompa
 Repository of Docker image for SSP and DROMPA
 
-- SSP version 1.2.3
-- DROMPAplus version 1.16.0
+- SSP version 1.3.2
+- DROMPAplus version 1.18.2
 - DROMPA version 3.7.2
 - ChIPsqTools version 1.0.0
 
@@ -38,7 +38,3 @@ First clone and move to the repository
 Then type:
 
     docker build -t <account>/ssp_drompa .
-
-## Contact
-
-Ryuichiro Nakato: rnakato AT iqb.u-tokyo.ac.jp
