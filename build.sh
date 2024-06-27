@@ -1,6 +1,6 @@
-for tag in 2024.03
+for tag in 2024.06 latest
 do
-    docker build -t rnakato/ssp_drompa:$tag . --no-cache
+    docker build -t rnakato/ssp_drompa:$tag . #--no-cache
     docker push rnakato/ssp_drompa:$tag
 done
 
